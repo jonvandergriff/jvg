@@ -1,0 +1,103 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.jvg</groupId>
+	<artifactId>jvg-parent</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+
+	<name>${project.artifactId}</name>
+	<url>http://maven.apache.org</url>
+	<description>This defines the basic requirements for the JVG based application/tools</description>
+	<inceptionYear>2014</inceptionYear>
+
+	<organization>
+		<name>N/A</name>
+	</organization>
+
+	<prerequisites>
+		<maven>3.0.0</maven>
+	</prerequisites>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<licenses>
+		<license>
+			<name>For Internal Use Only</name>
+			<comments>This project is intended only for use by Jon Vandergriff.</comments>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Jon Vandergriff</name>
+			<email>catburgers@gmail.com</email>
+		</developer>
+		<!-- Add more developers -->
+	</developers>
+	<repositories>
+		<!-- need to figure out my own repos -->
+	</repositories>
+	<pluginRepositories>
+		<!-- need to figure out plugin repos -->
+	</pluginRepositories>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.3</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	<reporting>
+		<plugins>
+			<plugin>
+				<!-- Changelog -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-changelog-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<type>date</type>
+					<dates>
+						<date implementation="java.lang.String">2014-01-01</date>
+					</dates>
+					<dateFormat>yyyy-MM-dd</dateFormat>
+					<outputEncoding>UTF-8</outputEncoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<!-- JXR -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jxr-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<inputEncoding>UTF-8</inputEncoding>
+					<outputEncoding>UTF-8</outputEncoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<!-- Project Info Reports -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>2.7</version>
+			</plugin>
+		</plugins>
+	</reporting>
+	<distributionManagement>
+		<!-- figure out how we're gonna distribute this to repos later -->
+	</distributionManagement>
+</project>
