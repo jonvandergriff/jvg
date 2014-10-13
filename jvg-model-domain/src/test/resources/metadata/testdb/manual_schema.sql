@@ -1,0 +1,65 @@
+--drop all tables
+drop table PERSON if exists;
+drop table DEMOGRAPHIC if exists;
+drop table USERDETAILS if exists;
+drop table PERSONAUTHORITY if exists;
+drop table USERDETAILS_PERSONAUTHORITY if exists;
+
+--create the tables
+CREATE TABLE PERSON
+(
+	PERSON_ID			varchar(100)		NOT NULL,
+	DEMOGRAPHIC_ID_FK	varchar(100)		NOT NULL,
+	USERDETAILS_ID_FK	varchar(100)		NOT NULL,
+	UPDT_DT_TM			DATE				NOT NULL,
+  	UPDT_TASK			varchar(100)		NOT NULL,
+  	UPDT_USER			varchar(100)		NOT NULL,
+  	primary key (PERSON_ID)
+);
+
+CREATE TABLE DEMOGRAPHIC
+(
+	DEMOGRAPHIC_ID		varchar(100)		NOT NULL,
+	NAME				varchar(250)		NOT NULL,
+	UPDT_DT_TM			DATE				NOT NULL,
+  	UPDT_TASK			varchar(100)		NOT NULL,
+  	UPDT_USER			varchar(100)		NOT NULL,
+  	primary key (DEMOGRAPHIC_ID)
+);
+
+CREATE TABLE USERDETAILS
+(
+	USERDETAILS_ID		varchar(100)		NOT NULL,
+	USERNAME			varchar(100)		NOT NULL,
+	PASSWORD			varchar(100)		NOT NULL,
+	ACCOUNT_ENABLED		boolean				NOT NULL,
+	ACCOUNT_EXPIRED		boolean				NOT NULL,
+	ACCOUNT_LOCKED		boolean				NOT NULL,
+	CREDENTIAL_EXPIRED	boolean				NOT NULL,
+	UPDT_DT_TM			DATE				NOT NULL,
+  	UPDT_TASK			varchar(100)		NOT NULL,
+  	UPDT_USER			varchar(100)		NOT NULL,
+  	primary key (USERDETAILS_ID)
+);
+
+
+CREATE TABLE PERSONAUTHORITY
+(
+	PERSONAUTHORITY_ID	varchar(100)		NOT NULL,
+	AUTHORITY			varchar(100)		NOT NULL,
+	UPDT_DT_TM			DATE				NOT NULL,
+  	UPDT_TASK			varchar(100)		NOT NULL,
+  	UPDT_USER			varchar(100)		NOT NULL
+);
+
+
+CREATE TABLE USERDETAILS_PERSONAUTHORITY
+(
+	USERDETAILS_ID		varchar(100)		NOT NULL,
+	UPDT_DT_TM			DATE				NOT NULL,
+  	UPDT_TASK			varchar(100)		NOT NULL,
+  	UPDT_USER			varchar(100)		NOT NULL
+);
+
+
+	<USERDETAILS_PERSONAUTHORITY USERDETAILS_ID="UD12345" PERSONAUTHORITY_ID="PA12345" />
