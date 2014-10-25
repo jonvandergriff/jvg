@@ -1,4 +1,4 @@
-package com.stride.cartrek.model.dto;
+package com.jvg.model.dto;
 
 import java.util.Set;
 
@@ -13,8 +13,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import com.stride.cartrek.model.domain.enums.AddressType;
-import com.stride.cartrek.model.domain.enums.StateEnum;
+import com.jvg.model.domain.enums.AddressType;
+import com.jvg.model.domain.enums.StateEnum;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

@@ -1,7 +1,7 @@
-package com.stride.cartrek.model.dao.hibernate;
+package com.jvg.model.dao.hibernate;
 
 import com.googlecode.genericdao.dao.hibernate.GenericDAO;
-import com.stride.cartrek.model.dto.User;
+import com.jvg.model.dto.User;
 
 public interface UserDAO extends GenericDAO<User, Long> {
 

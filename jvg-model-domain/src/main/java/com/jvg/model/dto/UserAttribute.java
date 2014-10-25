@@ -1,4 +1,4 @@
-package com.stride.cartrek.model.dto;
+package com.jvg.model.dto;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,11 +9,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.jvg.model.domain.enums.AttributeType;
+
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
-
-import com.stride.cartrek.model.domain.enums.AttributeType;
 
 @Entity
 @Table

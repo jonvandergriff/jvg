@@ -1,4 +1,4 @@
-package com.stride.cartrek.model.dto;
+package com.jvg.model.dto;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

@@ -10,13 +10,13 @@
 		<constructor-arg ref="dataSource" />
 	</bean>
 
-	<bean id="dataSet" class="com.joyride.cartrek.core.db.DataSetProvider">
+	<bean id="dataSet" class="com.jvg.core.db.DataSetProvider">
 		<constructor-arg name="dataLocation"
 			value="classpath:metadata/testdb/testdata.xml" />
 	</bean>
 
 	<!-- initialize the test data in the database -->
-	<bean id="testDataManager" class="com.joyride.cartrek.core.db.TestDataManager"
+	<bean id="testDataManager" class="com.jvg.core.db.TestDataManager"
 		depends-on="dataSource">
 		<constructor-arg name="dataSourceConnection" ref="databaseConnection" />
 		<constructor-arg name="dataSet" ref="dataSet" />

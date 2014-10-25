@@ -1,4 +1,4 @@
-package com.stride.cartrek.model.dao.hibernate;
+package com.jvg.model.dao.hibernate;
 
 import java.io.Serializable;
 

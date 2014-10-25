@@ -1,4 +1,4 @@
-package com.stride.cartrek.model.domain.enums;
+package com.jvg.model.domain.enums;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -55,7 +55,7 @@ public enum StateEnum {
 	/* static initializer */
 	static {
 		for (StateEnum state : values()) {
-			STATES_BY_ABBR.put(state.getAbbreviation(), state);
+			STATES_BY_ABBR.put(state.abbreviation(), state);
 		}
 	}
 
@@ -77,7 +77,7 @@ public enum StateEnum {
 	 * 
 	 * @return the state's abbreviation.
 	 */
-	public String getAbbreviation() {
+	public String abbreviation() {
 		return abbreviation;
 	}
 

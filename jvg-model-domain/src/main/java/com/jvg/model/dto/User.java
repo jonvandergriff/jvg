@@ -1,4 +1,4 @@
-package com.stride.cartrek.model.dto;
+package com.jvg.model.dto;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -20,8 +20,13 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
-import com.stride.cartrek.model.domain.enums.AttributeType;
+import com.jvg.model.domain.enums.AttributeType;
 
+/**
+ * 
+ * @author Jon Vandergriff
+ * 
+ */
 @Entity
 @Table
 @EqualsAndHashCode(exclude = { "id" })
@@ -33,6 +38,10 @@ public class User {
 	@Setter
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
+
+	@Getter
+	@Setter
+	private String username;
 
 	@Getter
 	@Setter

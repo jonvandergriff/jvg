@@ -14,7 +14,7 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 		<property name="dataSource" ref="dataSource" />
 		<property name="hibernateProperties" ref="hibernateProperties" />
 		<!-- Specify the packages to scan here -->
-		<property name="packagesToScan" value="com.stride.cartrek.model.domain" />
+		<property name="packagesToScan" value="com.jvg" />
 
 
 	</bean>

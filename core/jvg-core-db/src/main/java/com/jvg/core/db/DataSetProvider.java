@@ -1,4 +1,4 @@
-package com.joyride.cartrek.core.db;
+package com.jvg.core.db;
 
 import java.io.IOException;
 

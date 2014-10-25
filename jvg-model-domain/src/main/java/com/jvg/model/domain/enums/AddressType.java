@@ -1,4 +1,4 @@
-package com.stride.cartrek.model.domain.enums;
+package com.jvg.model.domain.enums;
 
 public enum AddressType {
 	WORK, HOME, OTHER;

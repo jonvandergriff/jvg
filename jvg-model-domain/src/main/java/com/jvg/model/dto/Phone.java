@@ -1,4 +1,4 @@
-package com.stride.cartrek.model.dto;
+package com.jvg.model.dto;
 
 import java.util.Set;
 
@@ -17,7 +17,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
-import com.stride.cartrek.model.domain.enums.PhoneType;
+import com.jvg.model.domain.enums.PhoneType;
 
 @Entity
 @Table

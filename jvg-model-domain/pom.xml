@@ -2,21 +2,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.stride.cartrek</groupId>
-	<artifactId>joyride-model-domain</artifactId>
+	<groupId>com.jvg</groupId>
+	<artifactId>jvg-model-domain</artifactId>
 	<name>${project.artifactId}</name>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<parent>
-		<groupId>com.stride.cartrek</groupId>
-		<artifactId>joyride-app-parent</artifactId>
+		<groupId>com.jvg</groupId>
+		<artifactId>jvg-app-parent</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<dependencies>
 
 		<dependency>
-			<groupId>com.stride.cartrek</groupId>
-			<artifactId>joyride-core-db</artifactId>
+			<groupId>com.jvg</groupId>
+			<artifactId>jvg-core-db</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
